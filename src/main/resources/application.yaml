@@ -1,7 +1,9 @@
 server:
-  port: 8001
+  port: 8761
 
 eureka:
   client:
     registerWithEureka: false
     fetchRegistry: false
+    eurekaServerPort: 8761
+    eurekaServerURLContext: eureka
