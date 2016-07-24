@@ -1,9 +1,15 @@
 server:
-  port: 8761
+  #port: 8761
+  port: 8000
 
 eureka:
   client:
+    #False values used to run one eureka instance(just for testing and demo)
     registerWithEureka: false
     fetchRegistry: false
-    eurekaServerPort: 8761
+
+    eurekaServerPort: 8000
+    #eurekaServerPort: 8761
     eurekaServerURLContext: eureka
+    #serviceUrl:
+    #  defaultZone: http://server1-url/eureka/,http://server2-url/eureka/
